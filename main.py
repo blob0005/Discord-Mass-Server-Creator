@@ -1,10 +1,7 @@
-from turtle import color
-
-
 error = False
 try:
     import os
-    os.system("title " + "Discord Mass Server Creator")
+    os.system("title " + "Discord Mass Server Creator,   Made By blob#0005,   Github: github.com/blob0005")
 except:
     pass
 try:
