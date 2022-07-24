@@ -44,7 +44,8 @@ def creator():
                 break
             if "403" in str(r):
                 print("Locked Token")
-    name = input("Enter What Server Name Should Be: ")
+    
+    name = input("Enter What Server Name Should Be (Name Cant Only Be An Number): ")
     user = discord.Client()
     @user.event
     async def on_connect():
@@ -55,7 +56,7 @@ def creator():
                 await user.create_guild(name)
                 print(colorama.Fore.GREEN + f"[{str(done)}] Created Guild/Server")
             except:
-                print(colorama.Fore.RED + "Max Servers Reached")
+                print(colorama.Fore.RED + "Max Servers Reached/Name Not Valid")
         print("Done")
         input("")
         exit()
